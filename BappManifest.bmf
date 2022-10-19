@@ -1,12 +1,14 @@
 Uuid: 2495f6fb364d48c3b6c984e226c02968
 ExtensionType: 1
-Name: Collaborator Everywhere
-RepoName: collaborator-everywhere
-ScreenVersion: 1.2
+Name: Text4Shell Everywhere
+RepoName: Text4Shell-everywhere
+ScreenVersion: 1
 SerialVersion: 4
 MinPlatformVersion: 0
 ProOnly: True
-Author: James Kettle
-ShortDescription: Augments your proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator.
+Author: Javier Balanzategui, Kudelski Security
+ShortDescription: : A Burp Suite extension which augments your proxy traffic by injecting Text4Shell payloads into headers.
 EntryPoint: build/libs/collaborator-everywhere-all.jar
 BuildCommand: gradle fatJar
+SupportedProducts: Pro
+
