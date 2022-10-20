@@ -13,3 +13,5 @@ To build it:
 
 To use it:
 1. Add the site to the Scope tab in burp
+
+A list of potential affected software can be found [here](https://mvnrepository.com/artifact/org.apache.commons/commons-text/usages?p=10)

